@@ -1,6 +1,6 @@
 # .NET MAUI Blazor Server and Hybrid App - Template
 ## What is it?
-**TLDR;** This template provides a structure for creating Blazor Server and .NET MAUI Hybrid App with a shared RCL (Razor Class Library) where you can share your pages and services.
+**TLDR;** This template provides a structure for creating Blazor Server and .NET MAUI Hybrid App with a shared RCL (Razor Class Library) where you can store your pages and services.
 
 At the end of Eilon Lipton's talk at the .NET Conf 21 ([Build cross-platform native apps with .NET MAUI and Blazor](https://www.youtube.com/watch?v=Dr8L7zXxwLI&t=1534s)) there was a question about a project template for "*WebAssembly + Server + Hybrid*" and that Microsoft is currently not sure which way to ship this template.
 
@@ -10,7 +10,7 @@ So I decided to create one template for Visual Studio 2022 Preview.
 
 >Currently, this template supports only Blazor Server and **not** Blazor WASM.
 
-## Prerequierements
+## prerequisite
 1. Install [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/) and [.NET MAUI preview](https://docs.microsoft.com/en-us/dotnet/maui/get-started/installation)
 2. Install this template
     - Download the `.zip` file from the release page.
@@ -27,9 +27,12 @@ So I decided to create one template for Visual Studio 2022 Preview.
 2. RCL where all your shared components and services are available.
     - **Extensions**
         - **MauiHybridServices.cs** -> Register here your services which should be available in both applications.
-    - **Pages**
-        - 
-    - **wwwroot** -> Place your .js, .css, etc.. files which should be available in both. If you add a new file, please be sure, that you add them to yout `_Layout.cshtml` files.
+    - **Pages** -> Here you can add your Blazor components, which should be shared.
+    - **wwwroot** -> Place your .js, .css, etc.. files which should be available in both. 
+      >If you add a new file, please be sure, that you add them to your `_Layout.cshtml` files and use `_content` infront of your url, like 
+      >```html
+      ><link href="_content/$PROJECTNAME$.Shared/css/shared.css" rel="stylesheet" />
+      >```
 3. Blazor Server App 
     - **wwwroot**
         - **css**
