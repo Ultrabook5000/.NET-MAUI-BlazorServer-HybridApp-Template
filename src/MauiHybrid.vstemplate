@@ -1,0 +1,31 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>.NET MAUI Hybrid App</Name>
+		<Description>A project for creating Blazor Server App and .NET MAUI Blazor App with shared components</Description>
+		<Icon>Icon.ico</Icon>
+		<SortOrder>1000</SortOrder>
+		<DefaultName>MauiHybrid</DefaultName>
+		<ProjectType>CSharp</ProjectType>
+		<LanguageTag>CSharp</LanguageTag>
+		<ProjectTypeTag>Desktop</ProjectTypeTag>
+		<ProjectTypeTag>Web</ProjectTypeTag>
+		<PlatformTag>Windows</PlatformTag>
+		<PlatformTag>Android</PlatformTag>
+		<PlatformTag>iOS</PlatformTag>
+		<PlatformTag>macOS</PlatformTag>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.App" CopyParameters="true">
+				MauiHybrid.App\MauiHybrid.App.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.Shared" CopyParameters="true">
+				MauiHybrid.Shared\MauiHybrid.Shared.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+				MauiHybrid.Web\MauiHybrid.Web.vstemplate
+			</ProjectTemplateLink>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>

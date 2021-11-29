@@ -1,0 +1,68 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>MauiHybrid.Shared</Name>
+    <Description>Library for sharing .razor pages and services between Blazor SSR and .NET MAUI project.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MauiHybrid.Shared</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MauiHybrid.Shared.csproj" File="MauiHybrid.Shared.csproj" ReplaceParameters="true">
+      <Folder Name="Data" TargetFolderName="Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecast.cs">WeatherForecast.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastService.cs">WeatherForecastService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MauiHybridServices.cs">MauiHybridServices.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Counter.razor">Counter.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="FetchData.razor">FetchData.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Index.razor">Index.razor</ProjectItem>
+      </Folder>
+      <Folder Name="SharedPages" TargetFolderName="SharedPages">
+        <ProjectItem ReplaceParameters="false" TargetFileName="MainLayout.razor">MainLayout.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="MainLayout.razor.css">MainLayout.razor.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NavMenu.razor">NavMenu.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="NavMenu.razor.css">NavMenu.razor.css</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SurveyPrompt.razor">SurveyPrompt.razor</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <Folder Name="css" TargetFolderName="css">
+          <Folder Name="bootstrap" TargetFolderName="bootstrap">
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css.map">bootstrap.min.css.map</ProjectItem>
+          </Folder>
+          <Folder Name="open-iconic" TargetFolderName="open-iconic">
+            <Folder Name="font" TargetFolderName="font">
+              <Folder Name="css" TargetFolderName="css">
+                <ProjectItem ReplaceParameters="true" TargetFileName="open-iconic-bootstrap.min.css">open-iconic-bootstrap.min.css</ProjectItem>
+              </Folder>
+              <Folder Name="fonts" TargetFolderName="fonts">
+                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.eot">open-iconic.eot</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.otf">open-iconic.otf</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.svg">open-iconic.svg</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.ttf">open-iconic.ttf</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.woff">open-iconic.woff</ProjectItem>
+              </Folder>
+            </Folder>
+            <ProjectItem ReplaceParameters="false" TargetFileName="FONT-LICENSE">FONT-LICENSE</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="ICON-LICENSE">ICON-LICENSE</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="shared.css">shared.css</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="_Imports.razor">_Imports.razor</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
