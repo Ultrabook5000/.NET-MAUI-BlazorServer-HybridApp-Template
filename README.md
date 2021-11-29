@@ -16,6 +16,7 @@ So I decided to create one template for Visual Studio 2022 Preview.
     - Download the `.zip` file from the [release page](https://github.com/Ultrabook5000/.NET-MAUI-BlazorServer-HybridApp-Template/releases/).
     - Copy the `.zip` to the following path `%USERPROFILE%\Documents\Visual Studio 2022\Templates\ProjectTemplates` (if you didn't changed the path).
 3. Create a new project and search for `.NET MAUI Hybrid App`, you should see this template.
+![New Project](/assets/images/New_Project.png)
 
 ## Structure
 ![Folder structure of this template](/assets/images/Folder_Structure.png)
