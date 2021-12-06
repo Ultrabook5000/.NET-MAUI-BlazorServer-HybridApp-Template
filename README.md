@@ -1,6 +1,6 @@
 # .NET MAUI Blazor Server and Hybrid App - Template
 ## What is it?
-**TLDR;** This template provides a structure for creating Blazor Server and .NET MAUI Hybrid App with a shared RCL (Razor Class Library) where you can store your pages and services.
+**TLDR;** This template provides a structure for creating Blazor Server and .NET MAUI Hybrid App with a shared RCL (Razor Class Library) where you can store your pages and services. You can share it between Blazor Server App and MAUI App.
 
 At the end of Eilon Lipton's talk at the .NET Conf 21 ([Build cross-platform native apps with .NET MAUI and Blazor](https://www.youtube.com/watch?v=Dr8L7zXxwLI&t=1534s)) there was a question about a project template for "*WebAssembly + Server + Hybrid*" and that Microsoft is currently not sure which way to ship this template.
 
