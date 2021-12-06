@@ -42,3 +42,4 @@ So I decided to create one template for Visual Studio 2022 Preview.
 ```html
 <link href="_content/$PROJECTNAME$.Shared/css/shared.css" rel="stylesheet" />
 ```
+* `System.OperatingSystem.IsBrowser()` only works in Blazor WASM *not* in Blazor Server.
