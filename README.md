@@ -30,14 +30,15 @@ So I decided to create one template for Visual Studio 2022 Preview.
         - **MauiHybridServices.cs** -> Register here your services which should be available in both applications.
     - **Pages** -> Here you can add your Blazor components, which should be shared.
     - **wwwroot** -> Place your .js, .css, etc.. files which should be available in both. 
-      >If you add a new file, please be sure, that you add them to your `_Layout.cshtml` files and use `_content` infront of your url, like 
-      >```html
-      ><link href="_content/$PROJECTNAME$.Shared/css/shared.css" rel="stylesheet" />
-      >```
-3. Blazor Server App 
+3. Blazor Server App which holds all your Web specific configuration.
     - **wwwroot**
         - **css**
             - **site.css** -> Place here your .css which should only be available in the Blazor Server.
 
 
 ## Notes
+* If you delete the `MainLayout.razor` in RCL, be sure to change "AdditionalAssemblies" in your Blazor Server (`App.razor`) and MAUI project (`Main.razor`) to a different page from RCL. You won't be able to share pages without this change.
+* If you add a new `.js`, `.css` etc. files, please be sure, that you add them to your `_Layout.cshtml` (Bazor Server) or `index.html` (MAUI) file and use `_content` infront of your url, like 
+```html
+<link href="_content/$PROJECTNAME$.Shared/css/shared.css" rel="stylesheet" />
+```
